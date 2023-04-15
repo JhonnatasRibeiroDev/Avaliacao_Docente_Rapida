@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Avaliação Docente Booster</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-twilight.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <div class="header">
+                <h1>Avaliação Docente Booster</h1>
+                <p>Nunca mais perca tempo com esse tipo de Avaliação.</p>
+            </div>
+        </header>
+        <main>
+            <div class="explicacao">
+                <h2 class="corPrincipal">Explicação</h2>
+                <div class="video">
+                    <div class="videoAqui"><!--Adicionar vídeo do youtube aqui-->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/K8RLcnCEU_4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>Como você dever fazer no seu computador</p>
+                </div>
+            </div>
+            <div class="passos">
+                <h2 class="corPrincipal">Passo a passo:</h2>
+                <p class="passo1">
+                    1º passo, clique para copiar o código JavaScript abaixo.
+                </p>
+                <div class="editor"
+                    onclick="copyToClipboard(`const selects = document.querySelectorAll('select'); selects.forEach((select) => { const secondOption = select.querySelectorAll('option')[1]; secondOption.setAttribute('selected', 'selected'); });`)">
+                    const selects = document.querySelectorAll('select');<br>
+                    selects.forEach((select) => {<br>
+                    const secondOption = select.querySelectorAll('option')[1];<br>
+                    secondOption.setAttribute('selected', 'selected');<br>
+                    });
+                </div>
+                <p class="passo2">
+                    2º passo, dentro da página, clique com o botão esquerdo do mouse e vá em inspecionar.
+                </p>
+                <p class="passo3">
+                    3º passo, vá em console, cole o código e dê enter.
+
+                <p>
+                    Pronto, agora só finalizar, e correr pro abraço.
+                </p>
+            </div>
+            <img width="200"
+                src="https://static.vecteezy.com/system/resources/previews/012/488/038/original/like-3d-illustration-png.png"
+                alt="">
+        </main>
+        <footer>
+            <p>
+                Criador do Por &copy; <a href="https://github.com/JhonnatasRibeiroDev">Jhonnatas Ribeiro</a>
+            </p>
+        </footer>
+    </section>
+
+
+
+
+
+    <!--Sessão  JavaScript-->
+    <script>
+        function copyToClipboard(text) {
+            var tempInput = document.createElement("textarea");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
+    </script>
+</body>
+
+</html>
